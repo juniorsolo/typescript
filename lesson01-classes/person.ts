@@ -9,5 +9,7 @@ export class Person{
         console.log(`${this.name} has ${age} years old`);
     }
 
-
+    public toString(): string{
+        return `class Person, name ${this.name}`;
+    }
 }
