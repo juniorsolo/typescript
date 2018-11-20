@@ -8,11 +8,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Lista de Tarefas';
-  tasks = [];
-  task="";
-
-  add() :void{
-    this.tasks.push(this.task);
-    this.task = "";
-  }
 }
