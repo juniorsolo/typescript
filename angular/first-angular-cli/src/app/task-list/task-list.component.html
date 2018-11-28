@@ -2,7 +2,15 @@
 <button type="button" (click)="add()">Add</button>
 
 <ul>
-  <li *ngFor="let item of tasks">
-    {{ item }}
+  <li *ngFor="let item of tasks" [innerHtml]="item">
   </li>
 </ul>
+<br/>
+
+<div [hidden]="isAdmin">
+    common user
+</div>
+
+<div [hidden]="!isAdmin">
+    admin user
+</div>
