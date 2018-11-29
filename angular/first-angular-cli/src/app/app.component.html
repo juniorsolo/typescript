@@ -3,3 +3,29 @@
      {{ title }}!
   </h1>
 <app-task-list></app-task-list>
+<br/>
+{{ user | json }}
+<br/>
+{{ textUpper | uppercase }}
+<br/>
+{{ textUpper | lowercase }}
+<br/>
+{{ valuePercent | percent }}
+<br/>
+{{ date | date : 'dd/MM/yyyy' }}
+<br/>
+{{ money | currency }}
+
+<div *ngIf="isAdmin">
+   admin via ngIf
+</div>
+<br/>
+<br/>
+
+<div [ngSwitch]="profile">
+  <div *ngSwitchCase="1"> you choose case 1</div>
+  <div *ngSwitchCase="2"> you choose case 2</div>
+  <div *ngSwitchDefault>you choose default</div>
+</div>
+
+
